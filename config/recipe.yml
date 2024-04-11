@@ -38,19 +38,14 @@ modules:
       install:
         # GNOME Apps
         - io.github.dvlv.boxbuddyrs
-        - org.gnome.Calendar
         - org.gnome.Characters
         - org.gnome.Snapshot
-        - org.gnome.Connections
         - org.gnome.Evince
         - org.gnome.Logs
         - org.gnome.Loupe
-        - org.gnome.Maps
         - org.gnome.NautilusPreviewer
         - org.gnome.TextEditor
-        - org.gnome.Weather
         - org.gnome.baobab
-        - org.gnome.clocks
         - org.gnome.font-viewer
 
     user:
