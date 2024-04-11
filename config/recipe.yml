@@ -21,7 +21,7 @@ modules:
        - https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-%OS_VERSION%/szydell-system76-fedora-%OS_VERSION%.repo
     install:
       - firmware-manager
-      - 
+      - carapace-bin
       - nu
       - stow
       - gnome-calculator
