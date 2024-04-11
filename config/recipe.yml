@@ -1,11 +1,11 @@
 # image will be published to ghcr.io/<user>/<name>
-name: template
+name: secureblue-alexis
 # description will be included in the image's metadata
-description: This is my personal OS image.
+description: My personal developer workstation image, with everything I need, based on a pragmatically-detuned secureblue.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/ublue-os/silverblue-main
-image-version: 39 # latest is also supported if you want new updates ASAP
+base-image: ghcr.io/secureblue/silverblue-nvidia-userns-hardened
+image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
 # you can include multiple instances of the same module
@@ -20,8 +20,8 @@ modules:
     repos:
       # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%OS_VERSION%/atim-starship-fedora-%OS_VERSION%.repo
     install:
-      # - micro
-      # - starship
+      - firmware-manager
+      - nu
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -31,19 +31,87 @@ modules:
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
-      # If no repo information is specified, Flathub will be used by default
-      # repo-url: https://dl.flathub.org/repo/flathub.flatpakrepo
-      # repo-name: flathub
-      # repo-title: "Flathub (system-wide)" # Optional; this sets the remote's user-facing name in graphical frontends like GNOME Software
       install:
-        # - org.mozilla.firefox
-        # - org.gnome.Loupe
-        # - one.ablaze.floorp//lightning # This is an example of flatpak which has multiple branches in selection (flatpak//branch).
-      # Flatpak runtimes are not supported (like org.winehq.Wine//stable-23.08),
-      # only normal flatpak applications are (like Floorp Lightning web browser in this example).
-      # Installing different branches of the same Flatpak is not supported.
-      remove:
-      # - org.gnome.eog
+        # GNOME Apps
+        - io.github.dvlv.boxbuddyrs
+        - org.gnome.Calendar
+        - org.gnome.Characters
+        - org.gnome.Snapshot
+        - org.gnome.Connections
+        - org.gnome.Evince
+        - org.gnome.Logs
+        - org.gnome.Loupe
+        - org.gnome.Maps
+        - org.gnome.NautilusPreviewer
+        - org.gnome.TextEditor
+        - org.gnome.Weather
+        - org.gnome.baobab
+        - org.gnome.clocks
+        - org.gnome.font-viewer
+
+    user:
+      install:
+        # Utility Applications
+        - com.belmoussaoui.Authenticator
+        - com.hunterwittenborn.Celeste
+        - com.mattjakeman.ExtensionManager
+        - com.github.tchx84.Flatseal
+        - com.github.finefindus.eyedropper
+
+        # Office/Productivity
+        - com.calibre_ebook.calibre
+        - org.libreoffice.LibreOffice
+        - org.blender.Blender
+        - org.gimp.GIMP
+        - org.inkscape.Inkscape
+        - io.gitlab.librewolf-community
+
+        # Communication
+        - com.discordapp.Discord
+        - org.signal.Signal
+
+        # Games
+        - com.valvesoftware.Steam
+        - io.github.garglk.Gargoyle
+
+        # Development
+        - com.google.AndroidStudio
+
+  - type: default-flatpaks
+    notify: true
+
+    system:
+      repo-name: gnome-nightly
+      repo-url: https://nightly.gnome.org/gnome-nightly.flatpakrepo
+      repo-name: "GNOME Nightly"
+      install:
+        - org.gnome.Ptyxis.Devel
+
+  - type: gnome-extensions
+    install:
+      - batterytimetypeof.pw.v5
+      - custom-accent-colorsdemiskp.v9
+      - forgejmmaranan.com.v78
+      - PrivacyMenustuarthayhurst.v24
+      - search-lighticedman.github.com.v22
+      - transparent-top-barftpix.com.v19
+      - user-themegnome-shell-extensions.gcampax.github.com.v54
+      - VitalsCoreCoding.com.v67
+      - vertical-workspacesG-dH.github.com.v52
+
+  - type: gschema-overrides
+    include:
+      - zz1-alexis.gschema.override
+
+  - type: fonts
+    fonts:
+      google-fonts:
+        - JetBrains Mono
+
+  - type: systemd
+    system:
+      enabled:
+        - system76-firmware-daemon
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
