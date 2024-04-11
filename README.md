@@ -1,4 +1,4 @@
-# Secureblue Workstation Spin for Alexis &nbsp; [![build-ublue](https://github.com/blue-build/template/actions/workflows/build.yml/badge.svg)](https://github.com/blue-build/template/actions/workflows/build.yml)
+# Secureblue Workstation Spin for Alexis &nbsp; [![build-ublue](https://github.com/alexispurslane/secureblue-alexis/actions/workflows/build.yml/badge.svg)](https://github.com/alexispurslane/secureblue-alexis/actions/workflows/build.yml)
 
 ## Changes from updatream
 
