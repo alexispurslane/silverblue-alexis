@@ -22,6 +22,7 @@ modules:
     install:
       - firmware-manager
       - nu
+      - stow
       - gnome-calculator
     remove:
       # example: removing firefox (in favor of the flatpak)
