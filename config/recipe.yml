@@ -113,6 +113,9 @@ modules:
     system:
       enabled:
         - system76-firmware-daemon
+    user:
+      enabled:
+        - com.System76.FirmwareManager.Notify.timer
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
