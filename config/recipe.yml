@@ -19,11 +19,10 @@ modules:
   - type: rpm-ostree
     repos:
        - https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-%OS_VERSION%/szydell-system76-fedora-%OS_VERSION%.repo
-       - https://yum.fury.io/rsteube/fury.repo
     install:
       - firmware-manager
-      - carapace-bin
       - nu
+      - fish
       - stow
       - gnome-calculator
     remove:
@@ -83,6 +82,7 @@ modules:
       repo-url: https://nightly.gnome.org/gnome-nightly.flatpakrepo
       install:
         - org.gnome.Ptyxis.Devel
+        - io.github.dvlv.boxbuddyrs
 
   - type: gnome-extensions
     install:
