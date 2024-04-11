@@ -21,6 +21,7 @@ modules:
        - https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-%OS_VERSION%/szydell-system76-fedora-%OS_VERSION%.repo
     install:
       - firmware-manager
+      - 
       - nu
       - stow
       - gnome-calculator
@@ -55,7 +56,6 @@ modules:
       install:
         # Utility Applications
         - com.belmoussaoui.Authenticator
-        - com.hunterwittenborn.Celeste
         - com.mattjakeman.ExtensionManager
         - com.github.tchx84.Flatseal
         - com.github.finefindus.eyedropper
