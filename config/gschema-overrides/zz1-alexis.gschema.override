@@ -45,8 +45,8 @@ translate=true
 
 [org/gnome/desktop/background]
 picture-options='zoom'
-picture-uri='file:///var/home/alexispurslane/.config/background'
-picture-uri-dark='file:///var/home/alexispurslane/.config/background'
+picture-uri='file:///usr/share/backgrounds/custom/cyberpunkvcar.jpg'
+picture-uri-dark='file:///usr/share/backgrounds/custom/cyberpunkvcar.jpg'
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
