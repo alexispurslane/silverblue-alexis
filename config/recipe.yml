@@ -83,7 +83,6 @@ modules:
     system:
       repo-name: gnome-nightly
       repo-url: https://nightly.gnome.org/gnome-nightly.flatpakrepo
-      repo-name: "GNOME Nightly"
       install:
         - org.gnome.Ptyxis.Devel
 
