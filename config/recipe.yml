@@ -49,7 +49,7 @@ modules:
         - org.gnome.TextEditor
         - org.gnome.baobab
         - org.gnome.font-viewer
-
+        - io.bassi.Amberol
     user:
       install:
         # Utility Applications
