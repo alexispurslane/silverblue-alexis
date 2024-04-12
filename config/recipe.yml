@@ -35,6 +35,8 @@ modules:
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       install:
+        # My apps
+        - com.github.GradienceTeam.Gradience
         # GNOME Apps
         - io.github.dvlv.boxbuddyrs
         - org.gnome.Characters
@@ -82,12 +84,12 @@ modules:
       repo-url: https://nightly.gnome.org/gnome-nightly.flatpakrepo
       install:
         - org.gnome.Ptyxis.Devel
-        - io.github.dvlv.boxbuddyrs
 
   - type: gnome-extensions
     install:
+      - containersroyg.v34
       - batterytimetypeof.pw.v5
-      - custom-accent-colorsdemiskp.v9
+      - logomenuaryan_k.v29
       - forgejmmaranan.com.v78
       - PrivacyMenustuarthayhurst.v24
       - search-lighticedman.github.com.v22

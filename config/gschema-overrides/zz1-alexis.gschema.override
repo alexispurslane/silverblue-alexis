@@ -1,15 +1,19 @@
 [ca/desrt/dconf-editor]
-saved-pathbar-path='/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/'
-saved-view='/org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/'
-window-height=642
+saved-pathbar-path='z'
+saved-view='/org/gnome/desktop/background/'
+show-warning=false
+window-height=763
 window-is-maximized=false
-window-width=1265
+window-width=1248
 
 [com/ftpix/transparentbar]
 transparency=0
 
 [desktop/ibus/panel/emoji]
 favorites=['—']
+
+[org/fedorahosted/background-logo-extension]
+logo-position='bottom-right'
 
 [org/gnome/Console]
 last-window-size=(467, 509)
@@ -18,8 +22,8 @@ last-window-size=(467, 509)
 image-dir-uri='file:///var/home/alexispurslane/Downloads'
 
 [org/gnome/control-center]
-last-panel='notifications'
-window-state=(945, 1060, false)
+last-panel='multitasking'
+window-state=(945, 509, false)
 
 [org/gnome/desktop/a11y/interface]
 high-contrast=false
@@ -44,9 +48,12 @@ name='suse-yast.directory'
 translate=true
 
 [org/gnome/desktop/background]
+color-shading-type='solid'
 picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/custom/cyberpunkvcar.jpg'
-picture-uri-dark='file:///usr/share/backgrounds/custom/cyberpunkvcar.jpg'
+picture-uri='file:///var/home/alexispurslane/.local/share/backgrounds/2024-04-11-18-28-18-cyberpunkvcar.jpg'
+picture-uri-dark='file:///var/home/alexispurslane/.local/share/backgrounds/2024-04-11-18-28-18-cyberpunkvcar.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
 
 [org/gnome/desktop/input-sources]
 current=uint32 0
@@ -55,6 +62,7 @@ sources=[('xkb', 'us')]
 [org/gnome/desktop/interface]
 clock-format='12h'
 color-scheme='prefer-dark'
+enable-hot-corners=false
 font-antialiasing='grayscale'
 font-hinting='slight'
 gtk-theme='adw-gtk3-dark'
@@ -102,7 +110,7 @@ application-id='org.gnome.Terminal.desktop'
 application-id='org.signal.Signal.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
-numlock-state=false
+numlock-state=true
 
 [org/gnome/desktop/peripherals/mouse]
 natural-scroll=true
@@ -116,6 +124,13 @@ two-finger-scrolling-enabled=true
 disable-camera=true
 disable-microphone=true
 report-technical-problems=false
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///var/home/alexispurslane/.local/share/backgrounds/2024-04-11-18-28-18-cyberpunkvcar.jpg'
+primary-color='#000000000000'
+secondary-color='#000000000000'
 
 [org/gnome/desktop/wm/keybindings]
 close=['<Super>q']
@@ -149,7 +164,7 @@ migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [org/gnome/nautilus/window-state]
-initial-size=(840, 1388)
+initial-size=(945, 509)
 maximized=false
 
 [org/gnome/nm-applet/eap/5b5c5cea-6163-4405-bb0f-e6c240257722]
@@ -166,7 +181,7 @@ last-folder-path='/var/home/alexispurslane/Calibre Library'
 last-folder-path='/var/home/alexispurslane'
 
 [org/gnome/portal/filechooser/io.gitlab.librewolf-community]
-last-folder-path='/var/home/alexispurslane/Pictures/Screenshots'
+last-folder-path='/var/home/alexispurslane/Downloads'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
@@ -195,10 +210,20 @@ sleep-inactive-ac-type='nothing'
 [org/gnome/shell]
 disable-user-extensions=false
 disabled-extensions=['background-logo@fedorahosted.org', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['containers@royg', 'PrivacyMenu@stuarthayhurst', 'transparent-top-bar@ftpix.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'vertical-workspaces@G-dH.github.com', 'search-light@icedman.github.com', 'supergfxctl-gex@asus-linux.org', 'custom-accent-colors@demiskp', 'gsconnect@andyholmes.github.io', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'forge@jmmaranan.com', 'batterytime@typeof.pw', 'Vitals@CoreCoding.com']
+enabled-extensions=['containers@royg', 'PrivacyMenu@stuarthayhurst', 'transparent-top-bar@ftpix.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'vertical-workspaces@G-dH.github.com', 'search-light@icedman.github.com', 'supergfxctl-gex@asus-linux.org', 'custom-accent-colors@demiskp', 'gsconnect@andyholmes.github.io', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'forge@jmmaranan.com', 'batterytime@typeof.pw', 'Vitals@CoreCoding.com', 'logomenu@aryan_k']
 last-selected-power-profile='performance'
 remember-mount-password=false
 welcome-dialog-last-shown-version='45.0'
+
+[org/gnome/shell/extensions/Logo-menu]
+hide-icon-shadow=false
+menu-button-extensions-app='com.mattjakeman.ExtensionManager.desktop'
+menu-button-icon-image=1
+menu-button-terminal='flatpak run org.gnome.Ptyxis.Devel --new-window'
+show-activities-button=true
+show-lockscreen=true
+symbolic-icon=true
+use-custom-icon=false
 
 [org/gnome/shell/extensions/custom-accent-colors]
 accent-color='purple'
@@ -321,7 +346,7 @@ hot-sensors=['_memory_usage_', '_processor_usage_', '_processor_frequency_', '_s
 [org/gnome/software]
 check-timestamp=int64 1712846700
 first-run=false
-flatpak-purge-timestamp=int64 1712694695
+flatpak-purge-timestamp=int64 1712854190
 install-timestamp=int64 1709769957
 update-notification-timestamp=int64 1709825431
 
