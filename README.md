@@ -7,7 +7,7 @@
 - Add stow for configuration file management
 - Add fish for completions/backup shell (it's what I'm familiar with) and
   nushell (my aspirational shell)
-- Add Flatpaks for all my applications including Gradience for my custom lightweight theme (with the system management-critical ones being system flatpaks)
+- Add Flatpaks for all my applications (with the system management-critical ones being system flatpaks)
 - Provide the distrobox assemble spec for my development container as part of
   the system, so I can use `ujust` to build it
 - Add a ujust script for downloading and un-`stow`ing my dotfiles.
@@ -22,6 +22,7 @@
     search bar)
   - V-Shell (vertical workspaces!)
   - Forge (automatic tiling window manager for GNOME)
+  - Custom Accent Colors (purple by default)
   - Misc others
 - Add my gsettings:
   - Proper keybindings for navigating vertical workspaces

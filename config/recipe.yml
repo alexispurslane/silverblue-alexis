@@ -35,8 +35,9 @@ modules:
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       install:
-        # My apps
-        - com.github.GradienceTeam.Gradience
+        - org.gtk.Gtk3theme.adw-gtk3
+        - org.gtk.Gtk3theme.adw-gtk3-dark
+
         # GNOME Apps
         - io.github.dvlv.boxbuddyrs
         - org.gnome.Characters
@@ -97,6 +98,7 @@ modules:
       - user-themegnome-shell-extensions.gcampax.github.com.v54
       - VitalsCoreCoding.com.v67
       - vertical-workspacesG-dH.github.com.v52
+      - custom-accent-colorsdemiskp.v9
 
   - type: gschema-overrides
     include:
