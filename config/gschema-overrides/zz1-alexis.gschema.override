@@ -15,14 +15,34 @@ favorites=['—']
 [org/fedorahosted/background-logo-extension]
 logo-position='bottom-right'
 
+[org/fedoraproject/FirewallConfig]
+show-active-bindings=true
+show-ipsets=true
+
 [org/gnome/Console]
 last-window-size=(467, 509)
 
 [org/gnome/Disks]
 image-dir-uri='file:///var/home/alexispurslane/Downloads'
 
+[org/gnome/calculator]
+accuracy=9
+angle-units='degrees'
+base=10
+button-mode='basic'
+number-format='automatic'
+show-thousands=false
+show-zeroes=false
+source-currency=''
+source-units='degree'
+target-currency=''
+target-units='radian'
+window-maximized=false
+window-size=(360, 504)
+word-size=64
+
 [org/gnome/control-center]
-last-panel='multitasking'
+last-panel='keyboard'
 window-state=(945, 509, false)
 
 [org/gnome/desktop/a11y/interface]
@@ -71,7 +91,8 @@ monospace-font-name='JetBrains Mono 13'
 show-battery-percentage=true
 
 [org/gnome/desktop/notifications]
-application-children=['org-gnome-terminal', 'org-gnome-software', 'org-gnome-nautilus', 'com-nextcloud-desktopclient-nextcloud', 'com-discordapp-discord', 'org-gnome-baobab', 'io-gitlab-librewolf-community', 'org-gnome-shell-extensions-gsconnect', 'org-signal-signal', 'gnome-network-panel', 'org-gnome-console', 'com-mattjakeman-extensionmanager-desktop']
+application-children=['org-gnome-terminal', 'org-gnome-software', 'org-gnome-nautilus', 'com-nextcloud-desktopclient-nextcloud', 'com-discordapp-discord', 'org-gnome-baobab', 'io-gitlab-librewolf-community', 'org-gnome-shell-extensions-gsconnect', 'org-signal-signal', 'gnome-network-panel', 'org-gnome-console', 'com-mattjakeman-extensionmanager-desktop', 'gnome-power-panel']
+show-banners=false
 
 [org/gnome/desktop/notifications/application/com-discordapp-discord]
 application-id='com.discordapp.Discord.desktop'
@@ -84,6 +105,9 @@ application-id='com.nextcloud.desktopclient.nextcloud.desktop'
 
 [org/gnome/desktop/notifications/application/gnome-network-panel]
 application-id='gnome-network-panel.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
 
 [org/gnome/desktop/notifications/application/io-gitlab-librewolf-community]
 application-id='io.gitlab.librewolf-community.desktop'
@@ -110,7 +134,7 @@ application-id='org.gnome.Terminal.desktop'
 application-id='org.signal.Signal.desktop'
 
 [org/gnome/desktop/peripherals/keyboard]
-numlock-state=true
+numlock-state=false
 
 [org/gnome/desktop/peripherals/mouse]
 natural-scroll=true
@@ -136,6 +160,8 @@ secondary-color='#000000000000'
 close=['<Super>q']
 move-to-workspace-down=['<Control><Shift>Down']
 move-to-workspace-up=['<Control><Shift>Up']
+switch-input-source=@as []
+switch-input-source-backward=@as []
 switch-to-workspace-down=['<Control><Super>Down']
 switch-to-workspace-up=['<Control><Super>Up']
 
@@ -180,8 +206,14 @@ last-folder-path='/var/home/alexispurslane/Calibre Library'
 [org/gnome/portal/filechooser/com.discordapp.Discord]
 last-folder-path='/var/home/alexispurslane'
 
+[org/gnome/portal/filechooser/com.github.GradienceTeam.Gradience]
+last-folder-path='/var/home/alexispurslane/Pictures'
+
 [org/gnome/portal/filechooser/io.gitlab.librewolf-community]
 last-folder-path='/var/home/alexispurslane/Downloads'
+
+[org/gnome/portal/filechooser/org.signal.Signal]
+last-folder-path='/var/home/alexispurslane/Pictures'
 
 [org/gnome/settings-daemon/plugins/color]
 night-light-enabled=false
@@ -210,7 +242,7 @@ sleep-inactive-ac-type='nothing'
 [org/gnome/shell]
 disable-user-extensions=false
 disabled-extensions=['background-logo@fedorahosted.org', 'places-menu@gnome-shell-extensions.gcampax.github.com', 'apps-menu@gnome-shell-extensions.gcampax.github.com']
-enabled-extensions=['containers@royg', 'PrivacyMenu@stuarthayhurst', 'transparent-top-bar@ftpix.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'vertical-workspaces@G-dH.github.com', 'search-light@icedman.github.com', 'supergfxctl-gex@asus-linux.org', 'custom-accent-colors@demiskp', 'gsconnect@andyholmes.github.io', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'forge@jmmaranan.com', 'batterytime@typeof.pw', 'Vitals@CoreCoding.com', 'logomenu@aryan_k']
+enabled-extensions=['containers@royg', 'PrivacyMenu@stuarthayhurst', 'transparent-top-bar@ftpix.com', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'vertical-workspaces@G-dH.github.com', 'supergfxctl-gex@asus-linux.org', 'custom-accent-colors@demiskp', 'gsconnect@andyholmes.github.io', 'launch-new-instance@gnome-shell-extensions.gcampax.github.com', 'forge@jmmaranan.com', 'batterytime@typeof.pw', 'Vitals@CoreCoding.com', 'logomenu@aryan_k', 'search-light@icedman.github.com']
 last-selected-power-profile='performance'
 remember-mount-password=false
 welcome-dialog-last-shown-version='45.0'
@@ -235,6 +267,7 @@ theme-shell=true
 css-last-update=uint32 37
 float-always-on-top-enabled=true
 focus-border-toggle=false
+move-pointer-focus-enabled=false
 preview-hint-enabled=true
 split-border-toggle=true
 stacked-tiling-mode-enabled=false
@@ -312,7 +345,7 @@ monitor-count=1
 popup-at-cursor-monitor=true
 scale-height=0.10000000000000001
 scale-width=0.10000000000000001
-shortcut-search=['<Super>slash']
+shortcut-search=['<Super>space']
 
 [org/gnome/shell/extensions/user-theme]
 name='Custom-Accent-Colors'
@@ -344,9 +377,9 @@ ws-thumbnails-position=1
 hot-sensors=['_memory_usage_', '_processor_usage_', '_processor_frequency_', '_system_threads_active_', '_temperature_system76_acpi_cpu temp_']
 
 [org/gnome/software]
-check-timestamp=int64 1712846700
+check-timestamp=int64 1713183345
 first-run=false
-flatpak-purge-timestamp=int64 1712854190
+flatpak-purge-timestamp=int64 1713142039
 install-timestamp=int64 1709769957
 update-notification-timestamp=int64 1709825431
 
@@ -413,5 +446,5 @@ sort-column='name'
 sort-directories-first=false
 sort-order='ascending'
 type-format='category'
-window-position=(119, 131)
+window-position=(35, 32)
 window-size=(1203, 902)
