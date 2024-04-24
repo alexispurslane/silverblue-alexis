@@ -89,16 +89,15 @@ modules:
   - type: gnome-extensions
     install:
       - containersroyg.v34
-      - batterytimetypeof.pw.v5
       - logomenuaryan_k.v29
       - forgejmmaranan.com.v78
       - PrivacyMenustuarthayhurst.v24
       - search-lighticedman.github.com.v22
-      - transparent-top-barftpix.com.v19
-      - user-themegnome-shell-extensions.gcampax.github.com.v54
+      - transparent-top-barftpix.com.v20
+      - user-themegnome-shell-extensions.gcampax.github.com.v57
       - VitalsCoreCoding.com.v67
-      - vertical-workspacesG-dH.github.com.v52
-      - custom-accent-colorsdemiskp.v9
+      - vertical-workspacesG-dH.github.com.v57
+      - custom-accent-colorsdemiskp.v10
 
   - type: gschema-overrides
     include:
