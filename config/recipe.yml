@@ -1,7 +1,7 @@
 # image will be published to ghcr.io/<user>/<name>
 name: secureblue-alexis
 # description will be included in the image's metadata
-description: My personal developer workstation image, with everything I need, based on a pragmatically-detuned secureblue.
+description: My personal developer workstation image, with everything I need.
 
 # the base image to build on top of (FROM) and the version tag to use
 base-image: ghcr.io/secureblue/silverblue-nvidia-userns-hardened
@@ -68,6 +68,7 @@ modules:
         # Communication
         - com.discordapp.Discord
         - org.signal.Signal
+        - ch.protonmail.protonmail-bridge
 
         # Games
         - com.valvesoftware.Steam
