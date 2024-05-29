@@ -1,10 +1,10 @@
 # image will be published to ghcr.io/<user>/<name>
-name: secureblue-alexis
+name: silverblue-alexis
 # description will be included in the image's metadata
 description: My personal developer workstation image, with everything I need.
 
 # the base image to build on top of (FROM) and the version tag to use
-base-image: ghcr.io/secureblue/silverblue-nvidia-userns-hardened
+base-image: ghcr.io/ublue-os/silverblue-nvidia
 image-version: latest # latest is also supported if you want new updates ASAP
 
 # module configuration, executed in order
@@ -24,7 +24,6 @@ modules:
       - fish
       - stow
       - emacs
-      - emacsclient
       - gnome-calculator
     remove:
       # example: removing firefox (in favor of the flatpak)
