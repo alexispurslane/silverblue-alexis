@@ -88,8 +88,6 @@ modules:
 
   - type: gnome-extensions
     install:
-      - containersroyg.v34
-      - logomenuaryan_k.v29
       - forgejmmaranan.com.v78
       - PrivacyMenustuarthayhurst.v24
       - search-lighticedman.github.com.v22
@@ -99,6 +97,8 @@ modules:
       - vertical-workspacesG-dH.github.com.v57
       - custom-accent-colorsdemiskp.v10
       - gsconnectandyholmes.github.io.v57
+      - windows-search-providerG-dH.github.com.v13
+      - extensions-search-providerG-dH.github.com.v17
   - type: gschema-overrides
     include:
       - zz1-alexis.gschema.override
