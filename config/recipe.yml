@@ -20,11 +20,11 @@ modules:
     repos:
        - https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-%OS_VERSION%/szydell-system76-fedora-%OS_VERSION%.repo
     install:
+      - kiwix-tools
       - firmware-manager
       - fish
       - stow
       - emacs
-      - gnome-calculator
     remove:
       # example: removing firefox (in favor of the flatpak)
       # "firefox" is the main package, "firefox-langpacks" is a dependency
@@ -41,6 +41,7 @@ modules:
         - io.github.dvlv.boxbuddyrs
         - org.gnome.Characters
         - org.gnome.Snapshot
+        - org.gnome.Calculator
         - org.gnome.Evince
         - org.gnome.Logs
         - org.gnome.Loupe
@@ -56,7 +57,6 @@ modules:
         - com.mattjakeman.ExtensionManager
         - com.github.tchx84.Flatseal
         - com.github.finefindus.eyedropper
-        - org.kiwix.desktop
         - me.kozec.syncthingtk
 
         # Office/Productivity
