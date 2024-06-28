@@ -27,10 +27,11 @@ modules:
       - emacs
       - chkrootkit
       - iosevka-etoile
-      - iosevka-slab
-      - iosevka-curly-slab
+      - iosevka-aile
       - iosevka-ss14
+      - iosevka-slab
       - iosevka-curly
+      - iosevka-curly-slab
     replace:
       - from-repo: https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
         packages:
@@ -117,6 +118,8 @@ modules:
         - NerdFontsSymbolsOnly
       google-fonts:
         - JetBrains Mono
+        - Cardo
+        - Lato
 
   - type: systemd
     system:
