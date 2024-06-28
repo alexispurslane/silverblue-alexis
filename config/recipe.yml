@@ -18,8 +18,8 @@ modules:
 
   - type: rpm-ostree
     repos:
-        - https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-%OS_VERSION%/szydell-system76-fedora-%OS_VERSION%.repo
-        - https://copr.fedorainfracloud.org/coprs/peterwu/iosevka/repo/fedora-%OS_VERSION%/peterwu-iosevka-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-%OS_VERSION%/szydell-system76-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/peterwu/iosevka/repo/fedora-%OS_VERSION%/peterwu-iosevka-fedora-%OS_VERSION%.repo
     install:
       - firmware-manager
       - fish
@@ -46,7 +46,6 @@ modules:
         - org.gtk.Gtk3theme.adw-gtk3-dark
 
         # GNOME Apps
-        - io.github.dvlv.boxbuddyrs
         - org.gnome.Characters
         - org.gnome.Snapshot
         - org.gnome.Calculator
@@ -58,6 +57,9 @@ modules:
         - org.gnome.baobab
         - org.gnome.font-viewer
         - io.bassi.Amberol
+
+        # Terminal
+        - org.gnome.Ptyxis.Devel
     user:
       install:
         # Utility Applications
@@ -86,28 +88,19 @@ modules:
 
         # Development
         - com.google.AndroidStudio
-  - type: default-flatpaks
-    notify: true
-
-    system:
-      repo-name: gnome-nightly
-      repo-url: https://nightly.gnome.org/gnome-nightly.flatpakrepo
-      install:
-        - org.gnome.Ptyxis.Devel
-
   - type: gnome-extensions
     install:
-      - forgejmmaranan.com.v78
-      - PrivacyMenustuarthayhurst.v24
-      - search-lighticedman.github.com.v22
-      - transparent-top-barftpix.com.v20
-      - user-themegnome-shell-extensions.gcampax.github.com.v57
-      - VitalsCoreCoding.com.v67
-      - vertical-workspacesG-dH.github.com.v57
-      - custom-accent-colorsdemiskp.v10
-      - gsconnectandyholmes.github.io.v57
-      - windows-search-providerG-dH.github.com.v13
-      - extensions-search-providerG-dH.github.com.v17
+      - Forge
+      - Privacy Quick Settings
+      - Search Light
+      - 1708 # Transparent Top Bar by zhanghai
+      - User Themes
+      - Vitals
+      - 5177 # V-Shell (Vertical Workspaces)
+      - Custom Accent Colors
+      - GSConnect
+      - 6721 # ESP (Extensions Search Provider)
+      - 6730 # WSP (Windows Search Provider)
   - type: gschema-overrides
     include:
       - zz1-alexis.gschema.override
