@@ -18,18 +18,25 @@ modules:
 
   - type: rpm-ostree
     repos:
-       - https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-%OS_VERSION%/szydell-system76-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-%OS_VERSION%/szydell-system76-fedora-%OS_VERSION%.repo
+      - https://copr.fedorainfracloud.org/coprs/peterwu/iosevka/repo/fedora-%OS_VERSION%/peterwu-iosevka-fedora-%OS_VERSION%.repo
     install:
       - firmware-manager
       - fish
       - stow
       - emacs
       - chkrootkit
-    remove:
-      # example: removing firefox (in favor of the flatpak)
-      # "firefox" is the main package, "firefox-langpacks" is a dependency
-      # - firefox
-      # - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
+      - iosevka-etoile
+      - iosevka-slab
+      - iosevka-curly-slab
+      - iosevka-ss14
+      - iosevka-curly
+    replace:
+      - from-repo: https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
+        packages:
+          - mutter
+          - mutter-common
+          - gdm
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -106,6 +113,8 @@ modules:
 
   - type: fonts
     fonts:
+      nerd-fonts:
+        - NerdFontsSymbolsOnly
       google-fonts:
         - JetBrains Mono
 
