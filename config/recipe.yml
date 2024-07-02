@@ -26,12 +26,6 @@ modules:
       - stow
       - emacs
       - chkrootkit
-      - iosevka-etoile
-      - iosevka-aile
-      - iosevka-ss14
-      - iosevka-slab
-      - iosevka-curly
-      - iosevka-curly-slab
     replace:
       - from-repo: https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
         packages:
