@@ -26,12 +26,6 @@ modules:
       - stow
       - emacs
       - chkrootkit
-    replace:
-      - from-repo: https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
-        packages:
-          - mutter
-          - mutter-common
-          - gdm
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
