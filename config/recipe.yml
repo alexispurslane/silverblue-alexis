@@ -26,6 +26,7 @@ modules:
       - stow
       - emacs
       - chkrootkit
+      - syncthing
     replace:
       - from-repo: https://copr.fedorainfracloud.org/coprs/trixieua/mutter-patched/repo/fedora-%OS_VERSION%/trixieua-mutter-patched-fedora-%OS_VERSION%.repo
         packages:
@@ -53,7 +54,7 @@ modules:
         - io.bassi.Amberol
 
         # Terminal
-        - org.gnome.Ptyxis.Devel
+        - org.gnome.Ptyxis
     user:
       install:
         # Utility Applications
@@ -61,7 +62,6 @@ modules:
         - com.mattjakeman.ExtensionManager
         - com.github.tchx84.Flatseal
         - com.github.finefindus.eyedropper
-        - me.kozec.syncthingtk
 
         # Office/Productivity
         - com.calibre_ebook.calibre
@@ -115,6 +115,7 @@ modules:
     user:
       enabled:
         - emacs
+        - syncthing
 
   - type: script
     snippets:
