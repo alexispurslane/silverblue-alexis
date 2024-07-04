@@ -27,6 +27,7 @@ modules:
       - emacs
       - chkrootkit
       - syncthing
+      - calibre
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -58,7 +59,6 @@ modules:
         - com.github.finefindus.eyedropper
 
         # Office/Productivity
-        - com.calibre_ebook.calibre
         - org.libreoffice.LibreOffice
         - org.blender.Blender
         - org.gimp.GIMP
