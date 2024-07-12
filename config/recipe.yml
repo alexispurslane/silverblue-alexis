@@ -55,6 +55,7 @@ modules:
         - com.github.finefindus.eyedropper
         - com.calibre_ebook.calibre
         - org.gnome.Terminal
+        - net.mkiol.SpeechNote
 
         # Office/Productivity
         - org.libreoffice.LibreOffice
