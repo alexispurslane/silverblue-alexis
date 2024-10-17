@@ -26,7 +26,7 @@ modules:
       - stow
       - emacs
       #- chkrootkit
-      #- syncthing
+      - syncthing
       #- bottles
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
