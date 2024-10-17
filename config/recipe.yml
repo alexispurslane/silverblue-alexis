@@ -22,12 +22,12 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/peterwu/iosevka/repo/fedora-%OS_VERSION%/peterwu-iosevka-fedora-%OS_VERSION%.repo
     install:
       #- firmware-manager
-      - fish
-      - stow
-      - emacs
-      - chkrootkit
-      - syncthing
-      - bottles
+      #- fish
+      #- stow
+      #- emacs
+      #- chkrootkit
+      #- syncthing
+      #- bottles
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
