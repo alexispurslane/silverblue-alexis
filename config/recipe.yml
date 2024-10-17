@@ -27,7 +27,7 @@ modules:
       - emacs
       #- chkrootkit
       - syncthing
-      #- bottles
+      - bottles
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -113,6 +113,6 @@ modules:
   - type: script
     snippets:
       - "flatpak override --system --filesystem=host-os:ro --nodevice=all"
-      - "echo 'HOMEBREW_NO_ANALYTICS=1\n' >> /usr/etc/environment"
+      - "echo 'HOMEBREW_NO_ANALYTICS=1\\n' >> /usr/etc/environment"
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
 
