@@ -23,7 +23,7 @@ modules:
     install:
       - firmware-manager
       - fish
-      #- stow
+      - stow
       #- emacs
       #- chkrootkit
       #- syncthing
