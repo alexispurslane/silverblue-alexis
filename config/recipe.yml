@@ -24,7 +24,7 @@ modules:
       - firmware-manager
       - fish
       - stow
-      #- emacs
+      - emacs
       #- chkrootkit
       #- syncthing
       #- bottles
