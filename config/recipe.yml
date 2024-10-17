@@ -21,7 +21,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/szydell/system76/repo/fedora-%OS_VERSION%/szydell-system76-fedora-%OS_VERSION%.repo
       - https://copr.fedorainfracloud.org/coprs/peterwu/iosevka/repo/fedora-%OS_VERSION%/peterwu-iosevka-fedora-%OS_VERSION%.repo
     install:
-      - firmware-manager
+      #- firmware-manager
       - fish
       - stow
       - emacs
