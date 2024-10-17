@@ -22,7 +22,7 @@ modules:
       - https://copr.fedorainfracloud.org/coprs/peterwu/iosevka/repo/fedora-%OS_VERSION%/peterwu-iosevka-fedora-%OS_VERSION%.repo
     install:
       - firmware-manager
-      #- fish
+      - fish
       #- stow
       #- emacs
       #- chkrootkit
