@@ -65,7 +65,6 @@ modules:
 
         # Communication
         - com.discordapp.Discord
-        - org.signal.Signal
         - ch.protonmail.protonmail-bridge
 
         # Games
