@@ -65,7 +65,7 @@ modules:
 
         # Communication
         - org.signal.Signal
-        - org.local-send.localsend_app
+        - org.localsend.localsend_app
         - com.discordapp.Discord
         - ch.protonmail.protonmail-bridge
 
