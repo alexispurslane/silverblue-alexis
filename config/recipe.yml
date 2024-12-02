@@ -27,6 +27,7 @@ modules:
       - emacs
       - chkrootkit
       - syncthing
+      - gnome-shell-extension-gsconnect
   - type: default-flatpaks
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
@@ -84,7 +85,6 @@ modules:
       - User Themes
       - Vitals
       - 5177 # V-Shell (Vertical Workspaces)
-      - GSConnect
       - 6721 # ESP (Extensions Search Provider)
       - 6730 # WSP (Windows Search Provider)
   - type: gschema-overrides
