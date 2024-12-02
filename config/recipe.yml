@@ -82,7 +82,6 @@ modules:
       - Privacy Quick Settings
       - Search Light
       - 3960 # Transparent Top Bar by zhanghai
-      - User Themes
       - Vitals
       - 5177 # V-Shell (Vertical Workspaces)
       - 6721 # ESP (Extensions Search Provider)
