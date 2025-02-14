@@ -13,7 +13,7 @@ modules:
   - type: files
     files:
       - usr: /usr # copies config/files/usr into your image's /usr.
-                  # put configuration files you want in /etc/ on a booted system 
+                  # put configuration files you want in /etc/ on a booted system
                   # in /usr/etc/ in the image. read more in files module reference.
 
   - type: rpm-ostree
@@ -33,9 +33,6 @@ modules:
     notify: true # Send notification after install/uninstall is finished (true/false)
     system:
       install:
-        - org.gtk.Gtk3theme.adw-gtk3
-        - org.gtk.Gtk3theme.adw-gtk3-dark
-
         # GNOME Apps
         - org.gnome.Characters
         - org.gnome.Snapshot
@@ -114,4 +111,3 @@ modules:
       - "flatpak override --system --filesystem=host-os:ro --nodevice=all"
       - "echo 'HOMEBREW_NO_ANALYTICS=1\\n' >> /usr/etc/environment"
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
-
