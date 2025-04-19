@@ -26,7 +26,6 @@ modules:
       - emacs
       - chkrootkit
       - syncthing
-      - texlive-scheme-full
       - gnome-shell-extension-gsconnect
       - torbrowser-launcher
   - type: default-flatpaks
