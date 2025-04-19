@@ -78,7 +78,6 @@ modules:
     install:
       - 7065 # Tiling Shell (bc Forge is decaying sadly)
       - Privacy Quick Settings
-      - Search Light
       - 3960 # Transparent Top Bar by zhanghai
       - Vitals
       - 5177 # V-Shell (Vertical Workspaces)
